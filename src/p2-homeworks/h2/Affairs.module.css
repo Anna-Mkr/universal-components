@@ -1,0 +1,15 @@
+.someClass {
+
+}
+
+
+.active{
+    background-color: #f79cff !important;
+    border-color: #ffd7fe !important;
+}
+
+.active:hover {
+    background-color: #de70ea !important;
+}
+
+
