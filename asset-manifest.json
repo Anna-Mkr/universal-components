@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/nuniversal-components/static/css/main.cb3f934e.css",
-    "main.js": "/nuniversal-components/static/js/main.7b30126f.js",
-    "index.html": "/nuniversal-components/index.html",
-    "main.cb3f934e.css.map": "/nuniversal-components/static/css/main.cb3f934e.css.map",
-    "main.7b30126f.js.map": "/nuniversal-components/static/js/main.7b30126f.js.map"
+    "main.css": "/universal-components/static/css/main.cb3f934e.css",
+    "main.js": "/universal-components/static/js/main.7b30126f.js",
+    "index.html": "/universal-components/index.html",
+    "main.cb3f934e.css.map": "/universal-components/static/css/main.cb3f934e.css.map",
+    "main.7b30126f.js.map": "/universal-components/static/js/main.7b30126f.js.map"
   },
   "entrypoints": [
     "static/css/main.cb3f934e.css",
