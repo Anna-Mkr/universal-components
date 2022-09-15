@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/nuniversal-components/static/css/main.cb3f934e.css",
-    "main.js": "/nuniversal-components/static/js/main.fc762928.js",
+    "main.js": "/nuniversal-components/static/js/main.7b30126f.js",
     "index.html": "/nuniversal-components/index.html",
     "main.cb3f934e.css.map": "/nuniversal-components/static/css/main.cb3f934e.css.map",
-    "main.fc762928.js.map": "/nuniversal-components/static/js/main.fc762928.js.map"
+    "main.7b30126f.js.map": "/nuniversal-components/static/js/main.7b30126f.js.map"
   },
   "entrypoints": [
     "static/css/main.cb3f934e.css",
-    "static/js/main.fc762928.js"
+    "static/js/main.7b30126f.js"
   ]
 }
