@@ -1,0 +1,35 @@
+.wrapper {
+    padding-right: 5px; /* 3 */
+    padding-left:  5px; /* 3 */
+
+    position: fixed;
+    top: 40px;
+    left: -250px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.wrapper:hover {
+    left: 0;
+}
+
+.notActive {
+    color: #e0fff8;
+}
+
+.active {
+    color: #e7b7f1;
+}
+
+.NavigationIcon {
+    /*margin-bottom: 0px;*/
+    /*margin-top: 0px;*/
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: 40px;
+    filter: brightness(3)
+}
+
