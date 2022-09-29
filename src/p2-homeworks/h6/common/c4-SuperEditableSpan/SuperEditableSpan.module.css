@@ -1,0 +1,13 @@
+.span {
+    display: inline-block;
+
+    height: 31px;
+    padding-top: 10px;
+
+    cursor: pointer;
+}
+
+.iconEditText {
+    height: 30px;
+    filter: brightness(3)
+}
