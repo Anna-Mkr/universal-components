@@ -4,6 +4,7 @@ import PreJunior from "./pages/PreJunior";
 import Junior from "./pages/Junior";
 import JuniorPlus from "./pages/JuniorPlus";
 import Error404 from "./pages/Error404";
+import s from "./Pages.module.css"
 
 
 
@@ -15,7 +16,7 @@ export const PATH = {
 
 function Pages() {
     return (
-        <div>
+        <div className={s.wrapper}>
 
             {/*Routes выбирает первый подходящий роут*/}
             <Routes>
