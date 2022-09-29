@@ -1,7 +1,6 @@
 import React from 'react'
 import Message from './Message';
 import AlternativeMessage from './AlternativeMessage';
-import s from './HW1.module.css';
 
 
 const messageData = {
@@ -14,7 +13,7 @@ const messageData = {
 function HW1() {
 
     return (
-        <div className={s.speechWrapper}>
+        <div>
 
             <Message
                 avatar={messageData.avatar}
