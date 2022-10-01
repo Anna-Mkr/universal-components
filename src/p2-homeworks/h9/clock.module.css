@@ -1,0 +1,22 @@
+.container {
+    width: 200px;
+    position: relative;
+}
+
+.tooltip {
+    position: relative;
+    bottom: -16px;
+    width: 150px;
+    height: 70px;
+}
+
+.tooltiptext {
+    position: absolute;
+    top: -34px;
+    width: 150px;
+    background-color: rgba(173, 196, 200, 0.9);
+    color: #fff;
+    text-align: unset;
+    padding: 5px 0;
+    border-radius: 6px;
+}
