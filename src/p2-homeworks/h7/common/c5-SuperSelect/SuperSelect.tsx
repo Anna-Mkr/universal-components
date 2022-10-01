@@ -19,10 +19,15 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     )) : []
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        if (onChangeOption&&e.currentTarget.value) {
-            onChangeOption(e.currentTarget.value)
-        }
+        onChange&&onChange(e)
+        onChangeOption&&onChangeOption(e.currentTarget.value)
     }
+
+    // const finalClassName = s.select + { для добавления стиля в проекте
+    //     className
+    //     ? "" + className
+    //     : ""
+    // }
 
     return (
         <select onChange={onChangeCallback} {...restProps}>
