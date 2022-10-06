@@ -1,36 +1,49 @@
 import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import {useAppDispatch, useAppSelector} from "../../p1-main/m1-ui/u1-app/hooks";
+import s from "./HW10.module.css"
+import { isLoading } from './bll/loadingSlice';
+
+
 
 function HW10() {
-    // useSelector, useDispatch
-    const loading = false
+
+    const dispatch = useAppDispatch()//Typed Hooks useDispatch
+
+    const loading = useAppSelector(state => state.loading.loading)//Typed Hooks useSelector
 
     const setLoading = () => {
-        // dispatch
-        // setTimeout
+        dispatch(isLoading(true))
+        setTimeout(() => {
+            dispatch(isLoading(false))
+        }, 2000)
         console.log('loading...')
     };
 
     return (
-        <div>
+        <div className={s.wrapper}>
             <hr/>
             homeworks 10
+            <div>
+                {loading
+                    ? (
 
-            {/*should work (должно работать)*/}
-            {loading
-                ? (
-                    <div>крутилка...</div>
-                ) : (
-                    <div>
-                        <SuperButton onClick={setLoading}>set loading...</SuperButton>
+                        <div className={s.preloaderContainer}>
+                           <img alt={"Preloader"} className={s.preloaderGif} src={"https://i.gifer.com/ZZ5H.gif"}/>
                     </div>
-                )
-            }
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<Alternative/>*/}
-            <hr/>
+                    ) : (
+                    <div className={s.container}>
+                    <SuperButton onClick={setLoading}>set loading...</SuperButton>
+                    </div>
+                    )
+                }
+
+                <hr/>
+                {/*для личного творчества, могу проверить*/}
+                {/*<Alternative/>*/}
+                <hr/>
+            </div>
         </div>
     )
 }
