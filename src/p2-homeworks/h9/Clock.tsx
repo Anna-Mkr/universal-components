@@ -25,13 +25,6 @@ function Clock() {
         setShow(false)
     }
 
-    const formatDate = (date: number) => {
-        if(date<10){
-            return `0${date}`;
-        }
-        return date
-    }
-
     const stringTime = date.toLocaleTimeString() || <br/>
     const stringDate = `Date: ${date.toLocaleDateString()}` || <br/>
 
