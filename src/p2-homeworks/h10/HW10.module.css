@@ -1,0 +1,15 @@
+.wrapper {
+    height: 150px;
+}
+
+.preloaderContainer {
+    position: relative;
+    height: 100px;
+}
+
+.preloaderGif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+}
