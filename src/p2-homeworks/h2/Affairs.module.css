@@ -2,6 +2,16 @@
 
 }
 
+.container {
+    top: 10px;
+    position:relative;
+    height: 200px;
+}
+
+.buttonsBlock {
+    position:absolute;
+    bottom:0;
+}
 
 .active{
     background-color: #f79cff !important;

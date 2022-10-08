@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.high {
+    color: red;
+}
+
+.middle {
+    color: #ff9a00
+}
+
+.low {
+    color: #fff119
+}

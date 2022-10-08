@@ -1,20 +1,24 @@
 import React from 'react'
-import {AffairType} from "./HW2";
+import {AffairType} from './HW2';
+import {LightbulbCircle} from "@mui/icons-material";
+import s from './Affair.module.css'
+
 
 type AffairPropsType = {
-    // key не нужно типизировать
-    affair: AffairType // need to fix any
-    deleteAffairCallback: (id: number) => void // need to fix any
+    affair: AffairType
+    deleteAffairCallback: (id: number) => void
 }
 
 function Affair(props: AffairPropsType) {
     const deleteCallback = () => {
         props.deleteAffairCallback(props.affair._id)
-    }// need to fix
+    }
+    const finalIconStyle = props.affair.priority ? props.affair.priority : ""
 
     return (
-        <div className={props.affair.priority}>
-            {props.affair.name}--{props.affair.priority}
+        <div className={s.container}>
+            {props.affair.name}
+            <LightbulbCircle fontSize="small" className={s[finalIconStyle]}/>
             <button onClick={deleteCallback}>X</button>
         </div>
     )
