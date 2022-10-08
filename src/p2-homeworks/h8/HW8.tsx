@@ -39,13 +39,13 @@ function HW8() {
     const resState = () => dispatch({type: 'reset', payload: initialPeople})
 
     return (
-        <div>
+        <div className={s.container}>
             <hr/>
             homeworks 8
             <div>
                     {finalPeople}
 
-                <div>
+                <div className={s.buttonsBlock}>
                     <SuperButton onClick={sortUp}>sort up</SuperButton>
                     <SuperButton onClick={sortDown}>sort down</SuperButton>
                     <SuperButton onClick={checkAge}>check 18</SuperButton>
@@ -53,10 +53,6 @@ function HW8() {
                 </div>
 
             </div>
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativePeople/>*/}
-            <hr/>
         </div>
     )
 }
