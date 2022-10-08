@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import loadingReducer from "./loadingSlice";
+import themeReducer from "../../h12/bll/themeSlice";
 
 
 const store =  configureStore({
     reducer: {
-        loading: loadingReducer
+        loading: loadingReducer,
+        theme: themeReducer
     }
 })
 export type RootState = ReturnType<typeof store.getState>
@@ -23,5 +25,6 @@ export default store
 //
 // export type AppStoreType = ReturnType<typeof reducers>
 //
-// // @ts-ignore
-// window.store = store // for dev
+
+// @ts-ignore
+window.store = store // for dev
