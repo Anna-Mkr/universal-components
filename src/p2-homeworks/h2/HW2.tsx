@@ -57,10 +57,6 @@ function HW2() {
                 deleteAffairCallback={deleteAffairCallback}
                 filter={filter}
             />
-
-            <hr/>
-
-            <hr/>
         </div>
     )
 }
