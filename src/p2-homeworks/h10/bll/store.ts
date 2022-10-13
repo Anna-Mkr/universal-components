@@ -14,17 +14,5 @@ export type AppDispatch = typeof store.dispatch
 
 export default store
 
-// const reducers = combineReducers({
-//     loading: loadingReducer,
-//
-// })
-
-// const store = createStore(reducers)
-//
-
-//
-// export type AppStoreType = ReturnType<typeof reducers>
-//
-
 // @ts-ignore
 window.store = store // for dev
